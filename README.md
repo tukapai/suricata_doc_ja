@@ -21,7 +21,7 @@ https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_Instal
 廃止された（まだ有用性のある）ユーザーガイドについてはこちらを確認してください。   [available](https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_User_Guide).
 
 
-コントリビュート
+貢献（コントリビュートについて）
 ------------
 
 私たちは喜んでパッチの提供やその他の貢献をしています。  
@@ -32,22 +32,23 @@ https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_Instal
 Suricataは、ほとんどが信頼できない入力を扱う複雑なソフトウェアです。  
 この入力を誤って処理すると深刻な結果になります。
 
-* in IPS mode a crash may knock a network offline;
-* in passive mode a compromise of the IDS may lead to loss of critical and confidential data;
-* missed detection may lead to undetected compromise of the network.
+* IPSモード中にクラッシュした場合ネットワークが切断される可能性があります。
+* IDSパッシブモードで障害が発生した場合、機密データの喪失につながる可能性があります。
+* 誤検知によるネットワーク障害を引き起こす可能性があります。
 
+
+#TODO ここは後で考える
 In other words, we think the stakes are pretty high, especially since in many common cases the IDS/IPS will be directly reachable by an attacker.
 
-For this reason, we have developed a QA process that is quite extensive. A consequence is that contributing to Suricata can be a somewhat lengthy process.
+この理由のために、我々は、非常に広範囲のQAプロセスを開発しました。Suricataへの貢献の結果が反映されるまでにはいくつかの長いステップを経る必要があります。
 
-On a high level, the steps are:
+高水準のステップとは以下のとおりです。
 
-1. Travis-CI based build & unit testing. This runs automatically when a pull request is made.
+1. プルリクエストが行われた際に自動的にTravis-CIによるビルドユニットテストが実行されます。
 
-2. Review by devs from the team and community
+2. 開発者チームとコミュニティによるレビュー
 
-3. QA runs
-
+3. QAの実行
 
 
 ### Overview of Suricata's QA steps
