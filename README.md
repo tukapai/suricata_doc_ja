@@ -37,7 +37,7 @@ Suricataは、ほとんどが信頼できない入力を扱う複雑なソフト
 * 誤検知によるネットワーク障害を引き起こす可能性があります。
 
 
-#TODO ここは後で考える
+#TODO ここは後で考える  
 In other words, we think the stakes are pretty high, especially since in many common cases the IDS/IPS will be directly reachable by an attacker.
 
 この理由のために、我々は、非常に広範囲のQAプロセスを開発しました。Suricataへの貢献の結果が反映されるまでにはいくつかの長いステップを経る必要があります。
@@ -53,17 +53,19 @@ In other words, we think the stakes are pretty high, especially since in many co
 
 ### Overview of Suricata's QA steps
 
-Trusted devs and core team members are able to submit builds to our (semi) public Buildbot instance. It will run a series of build tests and a regression suite to confirm no existing features break.
+信頼できる開発者とコアチームのメンバーは、（半）公開のBuildbotインスタンスにビルドをサブミットできます。 既存の機能が壊れていないことを確認するために、一連のビルドテストとリグレッションスイートを実行されます。
 
 The final QA run takes a few hours minimally, and is started by Victor. It currently runs:
 
-- extensive build tests on different OS', compilers, optimization levels, configure features
-- static code analysis using cppcheck, scan-build
-- runtime code analysis using valgrind, DrMemory, AddressSanitizer, LeakSanitizer
-- regression tests for past bugs
-- output validation of logging
-- unix socket testing
-- pcap based fuzz testing using ASAN and LSAN
+最終的なQAはVictorによって実行され最低でも2.3時間ほど実行されます。
+
+- 異なるOSのもの、コンパイラ、最適化レベル、機能設定を行うextensive build tests
+- 静的コード分析を使用したcppcheck、ビルドのチェック
+- valgrind、DrMemory、AddressSanitizer、LeakSanitizerを用いた実行時コード分析
+- 過去のバグに対するリグレッションテスト
+- ログ出力のバリデーション
+- UNIXソケット・テスト
+- pcapをベースとしたASANとLSANを用いるfuzzテスト。
 
 Next to these tests, based on the type of code change further tests can be run manually:
 
