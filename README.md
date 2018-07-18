@@ -69,16 +69,14 @@ The final QA run takes a few hours minimally, and is started by Victor. It curre
 
 Next to these tests, based on the type of code change further tests can be run manually:
 
-- traffic replay testing (multi-gigabit)
-- large pcap collection processing (multi-terabytes)
-- AFL based fuzz testing (might take multiple days or even weeks)
-- pcap based performance testing
-- live performance testing
+- トラフィックリプレイ・テスト（マルチ・ギガビット）
+- 大規模なpcap収集処理（マルチ・テラバイト）
+- AFLをベースとしたfuzzテスト（数日、もしくは数週間必要かもしれない）
+- pcapベースのパフォーマンス・テスト
+- ライブ・パフォーマンステスト
 - various other manual tests based on evaluation of the proposed changes
 
-
-It's important to realize that almost all of the tests above are used as acceptance tests. If something fails, it's up to you to address this in your code.
-
+上記のテストのほとんどが受け入れテストとして使われていることを理解することは非常に重要です。もし何か間違いがあったとときのために、あなたのコードの中にアドレスを入れるかどうかはあなた次第ですが。
 
 One step of the QA is currently run post-merge. We submit builds to the Coverity Scan program. Due to limitations of this (free) service, we can submit once a day max.
 Of course it can happen that after the merge the community will find issues. For both cases we request you to help address the issues as they may come up.
