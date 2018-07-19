@@ -86,35 +86,38 @@ Of course it can happen that after the merge the community will find issues. For
 
 ### FAQ
 
-__Q: Will you accept my PR?__
+__Q: PRを受け入れますか?__
 
-A: That depends on a number of things, including the code quality. With new features it also depends on whether the team and/or the community think the feature is useful, how much it affects other code and features, the risk of performance regressions, etc.
-
-
-__Q: When will my PR be merged?__
-
-A: It depends, if it's a major feature or considered a high risk change, it will probably go into the next major version.
+A：それはコードの品質を含む多くのことに依存します。新機能では、チームやコミュニティがその機能が有用だと思うかどうか、他のコードや機能にどれだけ影響を与えるか、パフォーマンスの低下などのリスクにも依存します。
 
 
-__Q: Why was my PR closed?__
+__Q：PRはいつマージされますか？__
 
-A: As documented in the Suricata Github workflow here https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Github_work_flow, we expect a new pull request for every change.
-
-Normally, the team (or community) will give feedback on a pull request after which it is expected to be replaced by an improved PR. So look at the comments. If you disagree with the comments we can still discuss them in the closed PR.
-
-If the PR was closed without comments it's likely due to QA failure. If the Travis-CI check failed, the PR should be fixed right away. No need for a discussion about it, unless you believe the QA failure is incorrect.
+A：それは、それが主要な特徴であるか、または高いリスクの変化と見なされる場合、おそらく次のメジャーバージョンに入るでしょう。
 
 
-__Q: the compiler/code analyser/tool is wrong, what now?__
+__Q：私のPRはなぜクローズされたのですか？__
 
-A: to assist in the automation of the QA, we're not accepting warnings or errors to stay. In some cases this could mean that we add a suppression if the tool supports that (e.g. valgrind, DrMemory). Some warnings can be disabled. In some exceptional cases the only 'solution' is to refactor the code to work around a static code checker limitation false positive. While frusterating, we prefer this over leaving warnings in the output. Warnings tend to get ignored and then increase risk of hiding other warnings.
+A：Suricata Githubのワークフロー
+https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Github_work_flow　に記載されているように、すべての変更に対して新しいプルリクエストが必要です。
+
+通常、チーム（またはコミュニティ）はプルリクエストに関するフィードバックを行い、その後改善されたPRに置き換えられることが期待されます。だからコメントを見てください。あなたがコメントに同意しない場合、私たちはまだ閉じたPRでそれらを議論することができます。
+
+PRがコメントなしで終了した場合、おそらくQAの失敗が原因です。Travis-CIチェックが失敗した場合は、すぐにPRを修正する必要があります。あなたがQAの失敗が間違っていると思わない限り、それについての議論は必要ありません。
+
+__Q：コンパイラ/コードアナライザ/ツールが間違っていますが、今は何ですか？__
+
+A：QAの自動化を支援するために、私たちは滞在するための警告やエラーを受け付けていません。場合によっては、ツールがそれをサポートしている場合（たとえばvalgrind、DrMemory）、抑制を追加することができます。いくつかの警告は無効にすることができます。いくつかの例外的なケースでは、唯一の「解決策」は、コードをリファクタリングして、静的コードチェッカーの制限偽陽性を回避することです。frusterating中、私たちは出力に警告を残す以上にこれを好む。警告は無視され、その後、他の警告を隠すリスクが高くなりがちです。
 
 
-__Q: I think your QA test is wrong__
+__Q：あなたのQAテストは間違っていると思う__
 
-A: If you really think it is, we can discuss how to improve it. But don't come to this conclusion to quickly, moreoften it's the code that turns out to be wrong.
+A：本当にそうだと思うなら、それを改善する方法について話し合うことができます。しかし、すぐにこの結論に至らないようにしてください。それは間違っていることが明らかになります。
 
 
-__Q: do you require signing of a contributor license agreement?__
+__Q：コントリビュータライセンス契約に署名する必要がありますか？__
 
-A: Yes, we do this to keep the ownership of Suricata in one hand: the Open Information Security Foundation. See http://suricata-ids.org/about/open-source/ and http://suricata-ids.org/about/contribution-agreement/
+A：はい、私たちは、Suricataの所有権を一手に保つためにこれを行っています：
+オープン情報セキュリティ財団。
+http://suricata-ids.org/about/open-source/　および
+http://suricata-ids.org/about/contribution-agreement/　を参照してください。
