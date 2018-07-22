@@ -1,13 +1,14 @@
-What is Suricata
+Suricataについて
 ================
+
+SuricataはハイパフォーマンスなネットワークIDS，IPS，ネットワークセキュリティモニタリングエンジンです。オープンソースであり、非営利組織であるthe Open Information Security Foundation (OISF)によって所有されています。SuricataはOISFによって開発されています。
 
 Suricata is a high performance Network IDS, IPS and Network Security Monitoring engine. It is open source and owned by a community-run non-profit foundation, the Open Information Security Foundation (OISF). Suricata is developed by the OISF.
 
-About the Open Information Security Foundation
+the Open Information Security Foundationについて
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Open Information Security Foundation is a non-profit foundation organized to build community and to support open-source security technologies like Suricata, the world-class IDS/IPS engine.
-
+The Open Information Security Foundation は、コミュニティを構築し、ワールドクラスのIDS / IPSエンジンであるSuricataのようなオープンソースのセキュリティ技術をサポートするために組織された非営利団体です。
 
 License
 -------
