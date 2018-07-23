@@ -1,8 +1,8 @@
-Installation
+インストール
 ============
 
-Before Suricata can be used it has to be installed. Suricata can be installed
-on various distributions using binary packages: :ref:`install-binary-packages`.
+Suricataを使用する前に、インストールする必要があります。
+Suricataはバイナリパッケージ：：ref： `install-binary-packages`を使って、さまざまなディストリビューションでインストールすることができます。
 
 For people familiar with compiling their own software, the Source method is
 recommended.
@@ -32,7 +32,7 @@ Common configure options
 
 .. option:: --disable-gccmarch-native
 
-    Do not optimize the binary for the hardware it is built on. Add this 
+    Do not optimize the binary for the hardware it is built on. Add this
     flag if the binary is meant to be portable or if Suricata is to be used in a VM.
 
 .. option:: --prefix=/usr/
@@ -161,4 +161,3 @@ Advanced Installation
 
 Various installation guides for installing from GIT and for other operating systems are maintained at:
 https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_Installation
-
