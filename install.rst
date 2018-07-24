@@ -4,6 +4,8 @@
 Suricataを使用する前に、インストールする必要があります。
 Suricataはバイナリパッケージ：：ref： `install-binary-packages`を使って、さまざまなディストリビューションでインストールすることができます。
 
+
+
 For people familiar with compiling their own software, the Source method is
 recommended.
 
