@@ -4,17 +4,14 @@
 Suricataを使用する前に、インストールする必要があります。
 Suricataはバイナリパッケージ：：ref： `install-binary-packages`を使って、さまざまなディストリビューションでインストールすることができます。
 
+独自のソフトウェアのコンパイルに精通している方へは、Sourceからのインストールをおすすめします。
 
-
-For people familiar with compiling their own software, the Source method is
-recommended.
-
-Advanced users can check the advanced guides, see :ref:`install-advanced`.
+上級ユーザーは、高度なガイドを確認できます：ref： `install-advanced`を参照してください。
 
 Source
 ------
 
-Installing from the source distribution files gives the most control over the Suricata installation.
+ソースファイルからインストールすると、Suricataのインストールを最大限にコントロールすることができます。
 
 Basic steps::
 
@@ -24,12 +21,13 @@ Basic steps::
     make
     make install
 
+#ここはTODO
 This will install Suricata into ``/usr/local/bin/``, use the default
 configuration in ``/usr/local/etc/suricata/`` and will output to
 ``/usr/local/var/log/suricata``
 
 
-Common configure options
+共通の設定オプション
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. option:: --disable-gccmarch-native
