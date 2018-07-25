@@ -21,10 +21,11 @@ Basic steps::
     make
     make install
 
-#ここはTODO
-This will install Suricata into ``/usr/local/bin/``, use the default
-configuration in ``/usr/local/etc/suricata/`` and will output to
-``/usr/local/var/log/suricata``
+
+これにより、Suricataが``/usr/local/bin/``にインストールされます。
+デフォルトでは以下に設定とログ出力がされます。
+設定ファイル：``/usr/local/etc/suricata/``
+ログ出力：``/usr/local/var/log/suricata``
 
 
 共通の設定オプション
@@ -32,32 +33,38 @@ configuration in ``/usr/local/etc/suricata/`` and will output to
 
 .. option:: --disable-gccmarch-native
 
-    Do not optimize the binary for the hardware it is built on. Add this
-    flag if the binary is meant to be portable or if Suricata is to be used in a VM.
+    ハードウェアに対して最適化したビルドをしません。
+    バイナリをポータブルなものにする、もしくはSuricataがVMで使用する場合はこのフラグを追加してください。
 
 .. option:: --prefix=/usr/
 
-    Installs the Suricata binary into /usr/bin/. Default ``/usr/local/``
+    Suricataバイナリを``/usr/bin/``にインストールします。
+    Default : ``/usr/local/``
 
 .. option:: --sysconfdir=/etc
 
-    Installs the Suricata configuration files into /etc/suricata/. Default ``/usr/local/etc/``
+    ``/var/log/suricata/``にログインするためのSuricataを設定します。
+    Default : ``/usr/local/etc/``
 
 .. option:: --localstatedir=/var
 
-    Setups Suricata for logging into /var/log/suricata/. Default ``/usr/local/var/log/suricata``
+    Setups Suricata for logging into /var/log/suricata/.
+    Suricataのログが``/var/log/suricata/``に出力されるように設定します。
+    Default : ``/usr/local/var/log/suricata``
 
 .. option:: --enable-lua
 
     Enables Lua support for detection and output.
+    検出と出力でLuaサポートを有効にします。
 
 .. option:: --enable-geopip
 
     Enables GeoIP support for detection.
+    検出でGeoIPサポートを有効にします。
 
 .. option:: --enable-rust
 
-    Enables experimental Rust support
+    試験的なRustサポートを有効化します。
 
 Dependencies
 ^^^^^^^^^^^^
