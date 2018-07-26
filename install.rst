@@ -71,30 +71,32 @@ Dependencies
 
 For Suricata's compilation you'll need the following libraries and their development headers installed:
 
+Suricataのコンパイルには、以下のライブラリとその開発ヘッダーがインストールされている必要があります：
+
   libpcap, libpcre, libmagic, zlib, libyaml
 
-The following tools are required:
+次のツールが必要です。:
 
   make gcc (or clang) pkg-config
 
-For full features, also add:
+完全な機能を追加するには、次も追加します。:
 
   libjansson, libnss, libgeoip, liblua5.1, libhiredis, libevent
 
-Rust support (experimental):
+Rust サポート (experimental):
 
   rustc, cargo
 
 Ubuntu/Debian
 """""""""""""
 
-Minimal::
+最小限::
 
     apt-get install libpcre3 libpcre3-dbg libpcre3-dev build-essential libpcap-dev   \
                     libyaml-0-2 libyaml-dev pkg-config zlib1g zlib1g-dev \
                     make libmagic-dev
 
-Recommended::
+推奨::
 
     apt-get install libpcre3 libpcre3-dbg libpcre3-dev build-essential libpcap-dev   \
                     libnet1-dev libyaml-0-2 libyaml-dev pkg-config zlib1g zlib1g-dev \
