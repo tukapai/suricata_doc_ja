@@ -69,8 +69,6 @@ Basic steps::
 Dependencies
 ^^^^^^^^^^^^
 
-For Suricata's compilation you'll need the following libraries and their development headers installed:
-
 Suricataのコンパイルには、以下のライブラリとその開発ヘッダーがインストールされている必要があります：
 
   libpcap, libpcre, libmagic, zlib, libyaml
@@ -109,7 +107,7 @@ Extra for iptables/nftables IPS integration::
                     libnetfilter-log-dev libnetfilter-log1      \
                     libnfnetlink-dev libnfnetlink0
 
-For Rust support (Ubuntu only)::
+Rust サポート(Ubuntu only)::
 
     apt-get install rustc cargo
 
