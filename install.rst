@@ -113,15 +113,16 @@ Rust サポート(Ubuntu only)::
 
 .. _install-binary-packages:
 
-Binary packages
+バイナリパッケージ
 ---------------
 
 Ubuntu
 ^^^^^^
 
-For Ubuntu, the OISF maintains a PPA ``suricata-stable`` that always contains the latest stable release.
 
-To use it::
+Ubuntuの場合、OISFは常に最新の安定リリースを含むPPAの `` suricata-stable``を維持しています。
+
+使用する場合::
 
     sudo add-apt-repository ppa:oisf/suricata-stable
     sudo apt-get update
@@ -130,13 +131,13 @@ To use it::
 Debian
 ^^^^^^
 
-In Debian 9 (Stretch) do::
+Debian 9 (Stretch)で実行::
 
     apt-get install suricata
 
-In Debian Jessie Suricata is out of date, but an updated version is in Debian Backports.
+Debian Jessie のSuricataは古いですが、更新版はDebian Backports にあります。
 
-As root do::
+Root権限で実行::
 
     echo "deb http://http.debian.net/debian jessie-backports main" > \
         /etc/apt/sources.list.d/backports.list
@@ -153,7 +154,7 @@ Fedora
 RHEL/CentOS
 ^^^^^^^^^^^
 
-For RedHat Enterprise Linux 7 and CentOS 7 the EPEL repository can be used.
+RedHat Enterprise Linux 7およびCentOS 7では、EPELリポジトリを使用できます。
 
 ::
 
@@ -163,8 +164,8 @@ For RedHat Enterprise Linux 7 and CentOS 7 the EPEL repository can be used.
 
 .. _install-advanced:
 
-Advanced Installation
+高度なインストール
 ---------------------
 
-Various installation guides for installing from GIT and for other operating systems are maintained at:
+GITおよびその他のオペレーティングシステムからインストールするためのさまざまなインストールガイドは以下になります。:
 https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_Installation
