@@ -1,18 +1,23 @@
-Making sense out of Alerts
+アラートの意味を理解する
 ==========================
 
-When alert happens it's important to figure out what it means. Is it
-serious? Relevant? A false positive?
+アラートが発生したときは、その意味を理解することが重要です。
+それは深刻なものですか？関連性はどうですか？偽陽性ですか？
 
+#TODO　あとでやる
 To find out more about the rule that fired, it's always a good idea to
 look at the actual rule.
 
-The first thing to look at in a rule is the description that follows
-the "msg" keyword. Lets consider an example:
+ルールで最初に調べるのは、msg"キーワードの後に続く説明です
+例を考えてみましょう：
 
 ::
 
   msg:"ET SCAN sipscan probe";
+
+
+
+「ET」は、ルールがEmerging Threats から来たものであることを示します。
 
 The "ET" indicates the rule came from the Emerging Threats
 project. "SCAN" indicates the purpose of the rule is to match on some
