@@ -55,25 +55,19 @@ information:
   doc.emergingthreats.net/2010496
   www.emergingthreats.net/cgi-bin/cvsweb.cgi/sigs/CURRENT_EVENTS/CURRENT_Adobe
 
-Some rules contain a reference like: "reference:cve,2009-3958;" should
-allow you to find info about the specific CVE using your favorite
-search engine.
+いくつかのルールには"reference：cve、2009-3958;" のような情報が含まれていますが
+それらはあなたのお気に入りの検索エンジン使って特定のCVEに関する情報を見つけることができます。
 
-It's not always straight forward and sometimes not all of that
-information is available publicly. Usually asking about it on the
-signature support channel helps a lot then.
+公開されている情報は必ずしも正確というわけではありません、また時にはその情報のすべてが一般に公開されているわけでもありません。 そういった場合はシグネチャサポートチャネルで質問すると、多くの人の助けになります。
 
-In :doc:`../rule-management/suricata-update` more information on the rule
-sources and their documentation and support methods can be found.
+doc:`../rule-management/suricata-update` を参照するとルールの詳細やソース、それらのドキュメントとサポート方法が見つかります。
 
-In many cases, looking at just the alert and the packet that triggered
-it won't be enough to be conclusive. When using the default Eve settings
-a lot of metadata will be added to the alert.
+多くの場合、問題を確認するためにトリガーとなったアラートとパケットだけを見るだけでは不十分です。
+デフォルトのEVE設定を使用する場合、多くのメタデータがアラートに追加されています。
 
-For example, if a rule fired that indicates your web application is
-attacked, looking at the metadata might reveal that the web
-application replied with 404 not found. This will usually mean the
-attack failed. Usually, not always.
+たとえば、Webアプリケーションが攻撃されたこと示すルールが起動された場合
+メタデータを見ると、Webアプリケーションが404のエラーをが返しているだけかもしれません。
+通常は攻撃が失敗したのだろうと考えますが、必ずしもそうであるとは限りません。
 
 Not every protocol leads to metadata generation, so when running an
 IDS engine like Suricata, it's often recommended to combine it with
@@ -82,3 +76,13 @@ full TCP session or UDP flow can be inspected.
 
 Obviously there is a lot more to Incidence Response, but this should
 get you started.
+
+#以下の日本語は後で調整する。。。
+
+すべてのプロトコルがメタデータの生成につながるわけではないので、
+SuricataのようなIDSエンジンは、しばしばそれを
+完全なパケットキャプチャ。 Evebox、Sguil、Snorbyなどのツールを使用して、
+フルTCPセッションまたはUDPフローを検査できます。
+
+明らかにインシデントレスポンスにはさらに多くのものがありますが、これは
+あなたを始めましょう。
