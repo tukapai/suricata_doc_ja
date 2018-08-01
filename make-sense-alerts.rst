@@ -69,20 +69,12 @@ doc:`../rule-management/suricata-update` を参照するとルールの詳細や
 メタデータを見ると、Webアプリケーションが404のエラーをが返しているだけかもしれません。
 通常は攻撃が失敗したのだろうと考えますが、必ずしもそうであるとは限りません。
 
-Not every protocol leads to metadata generation, so when running an
-IDS engine like Suricata, it's often recommended to combine it with
-full packet capture. Using tools like Evebox, Sguil or Snorby, the
-full TCP session or UDP flow can be inspected.
+すべてのプロトコルがメタデータの生成につながるわけではないので、SuricataのようなIDSエンジンを実行する場合は、フルパケットキャプチャと組み合わせることをお勧めします。 Evebox、Sguil、Snorbyなどのツールを使用すると、完全なTCPセッションまたはUDPフローを検査できます。
 
 Obviously there is a lot more to Incidence Response, but this should
 get you started.
 
-#以下の日本語は後で調整する。。。
 
-すべてのプロトコルがメタデータの生成につながるわけではないので、
-SuricataのようなIDSエンジンは、しばしばそれを
-完全なパケットキャプチャ。 Evebox、Sguil、Snorbyなどのツールを使用して、
-フルTCPセッションまたはUDPフローを検査できます。
 
 明らかにインシデントレスポンスにはさらに多くのものがありますが、これは
 あなたを始めましょう。
