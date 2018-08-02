@@ -71,10 +71,4 @@ doc:`../rule-management/suricata-update` を参照するとルールの詳細や
 
 すべてのプロトコルがメタデータの生成につながるわけではないので、SuricataのようなIDSエンジンを実行する場合は、フルパケットキャプチャと組み合わせることをお勧めします。 Evebox、Sguil、Snorbyなどのツールを使用すると、完全なTCPセッションまたはUDPフローを検査できます。
 
-Obviously there is a lot more to Incidence Response, but this should
-get you started.
-
-
-
-明らかにインシデントレスポンスにはさらに多くのものがありますが、これは
-あなたを始めましょう。
+インシデントレスポンスは明らかに多くのものがありますが、これは　あなたが始めることができるでしょう。

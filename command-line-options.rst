@@ -1,19 +1,17 @@
-Command Line Options
+コマンドラインオプション
 ====================
 
 .. toctree::
 
-Suricata's command line options:
+Suricataのコマンドラインオプション:
 
 .. include:: partials/options.rst
 
-Unit Tests
+ユニットテスト
 ~~~~~~~~~~
 
-Builtin unittests are only available if Suricata has been built with
---enable-unittests.
+Suricataビルド時に "--enable-unittests" オプションを選択してビルドしたときにのみ組み込みのユニットテストを使用することができます。
 
-Running unittests does not take a configuration file. Use -l to supply
-an output directory.
+ユニットテスト実行時は設定ファイルを取得しません、"-l"オプションを使い出力するディレクトリを指定してください。
 
 .. include:: partials/options-unittests.rst
