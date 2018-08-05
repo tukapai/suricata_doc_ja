@@ -1,8 +1,8 @@
-Acknowledgements
+謝辞
 ================
 
-Thank you to the following for their Wiki and documentation
-contributions that have made this user guide possible:
+このユーザーガイドを可能にしたWikiおよびドキュメントの寄稿について
+以下の方々に感謝します。:
 
 - Andreas Herz
 - Andreas Moe
