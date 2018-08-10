@@ -4,9 +4,7 @@ Interacting via Unix Socket
 Introduction
 ------------
 
-Suricata can listen to a unix socket and accept commands from the user. The
-exchange protocol is JSON-based and the format of the message has been done
-to be generic.
+SuricataはUNIXソケットを聞いて、ユーザーからのコマンドを受け入れることができます。 エクスキシング・プロトコルはJSONベースであり、メッセージのフォーマットは一般的なものになっています。
 
 An example script called suricatasc is provided in the source and installed
 automatically when installing/updating Suricata.
@@ -14,13 +12,13 @@ automatically when installing/updating Suricata.
 The unix socket is enabled by default if libjansson is available.
 
 You need to have libjansson installed:
-  
+
 * libjansson4 - C library for encoding, decoding and manipulating JSON data
 * libjansson-dev - C library for encoding, decoding and manipulating JSON data (dev)
 * python-simplejson - simple, fast, extensible JSON encoder/decoder for Python
-  
+
 Debian/Ubuntu::
-  
+
    apt-get install libjansson4 libjansson-dev python-simplejson
 
 If libjansson is present on the system , unix socket will be compiled
@@ -28,9 +26,9 @@ in automatically.
 
 The creation of the socket is managed by setting enabled to 'yes' or 'auto'
 under unix-command in Suricata YAML configuration file:
-  
+
 ::
-  
+
   unix-command:
     enabled: yes
     #filename: custom.socket # use this to specify an alternate file
@@ -81,9 +79,9 @@ The set of existing commands is the following:
 
 You can access to these commands with the provided example script which
 is named ``suricatasc``. A typical session with ``suricatasc`` will looks like:
-  
+
 ::
-  
+
   # suricatasc
   Command list: shutdown, command-list, help, version, uptime, running-mode, capture-mode, conf-get, dump-counters, iface-stat, iface-list, quit
   >>> iface-list
@@ -98,13 +96,13 @@ Commands on the cmd prompt
 --------------------------
 
 You can use suricatasc directly on the command prompt:
-  
+
 ::
 
-  
+
   root@debian64:~# suricatasc -c version
   {'message': '2.1beta2 RELEASE', 'return': 'OK'}
-  root@debian64:~# 
+  root@debian64:~#
   root@debian64:~# suricatasc -c uptime
   {'message': 35264, 'return': 'OK'}
   root@debian64:~#
@@ -112,10 +110,10 @@ You can use suricatasc directly on the command prompt:
 
 **NOTE:**
 You need to quote commands involving more than one argument:
-  
+
 ::
 
-  
+
   root@debian64:~# suricatasc -c "iface-stat eth0"
   {'message': {'pkts': 5110429, 'drop': 0, 'invalid-checksums': 0}, 'return': 'OK'}
   root@debian64:~#
@@ -132,31 +130,31 @@ initialize.
 
 To use this mode, start suricata with your preferred YAML file and
 provide the option ``--unix-socket`` as argument:
-  
+
 ::
-  
+
   suricata -c /etc/suricata-full-sigs.yaml --unix-socket
 
 It is also possible to specify the socket filename as argument:
-  
+
 ::
-  
+
   suricata --unix-socket=custom.socket
 
 In this last case, you will need to provide the complete path to the
 socket to ``suricatasc``. To do so, you need to pass the filename as
 first argument of ``suricatasc``:
-  
+
 ::
-  
+
   suricatasc custom.socket
 
 Once Suricata is started, you can use the provided script
 ``suricatasc`` to connect to the command socket and ask for pcap
 treatment:
-  
+
 ::
-  
+
   root@tiger:~# suricatasc
   >>> pcap-file /home/benches/file1.pcap /tmp/file1
   Success: Successfully added file to list
@@ -176,23 +174,23 @@ be monitored for new files being added until you use ``pcap-interrupt`` or
 delete/move the directory.
 
 To know how many files are waiting to get processed, you can do:
-  
+
 ::
-  
+
   >>> pcap-file-number
   Success: 3
 
 To get the list of queued files, do:
-  
+
 ::
-  
+
   >>> pcap-file-list
   Success: {'count': 2, 'files': ['/home/benches/file1.pcap', '/home/benches/file2.pcap']}
 
 To get current processed file:
-  
+
 ::
-  
+
   >>> pcap-current
   Success:
   "/tmp/test.pcap"
@@ -221,17 +219,17 @@ https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Unix_Socket#Pro
 
 The following session show what is send (SND) and received (RCV) by
 the server. Initial negotiation is the following:
-  
+
 ::
-  
+
   # suricatasc
   SND: {"version": "0.1"}
   RCV: {"return": "OK"}
 
 Once this is done, command can be issued:
-  
+
 ::
-  
+
   >>> iface-list
   SND: {"command": "iface-list"}
   RCV: {"message": {"count": 1, "ifaces": ["wlan0"]}, "return": "OK"}
@@ -242,9 +240,9 @@ Once this is done, command can be issued:
   Success: {'pkts': 41508, 'drop': 0, 'invalid-checksums': 0}
 
 In pcap-file mode, this gives:
-  
+
 ::
-  
+
   >>> pcap-file /home/eric/git/oisf/benches/sandnet.pcap /tmp/bench
   SND: {"command": "pcap-file", "arguments": {"output-dir": "/tmp/bench", "filename": "/home/eric/git/oisf/benches/sandnet.pcap"}}
   RCV: {"message": "Successfully added file to list", "return": "OK"}
