@@ -6,8 +6,7 @@ Introduction
 
 SuricataはUNIXソケットを聞いて、ユーザーからのコマンドを受け入れることができます。 エクスキシング・プロトコルはJSONベースであり、メッセージのフォーマットは一般的なものになっています。
 
-An example script called suricatasc is provided in the source and installed
-automatically when installing/updating Suricata.
+suricatascと呼ばれるサンプルスクリプトがソースに提供され、Suricataのインストール/更新時に自動的にインストールされます。
 
 The unix socket is enabled by default if libjansson is available.
 
