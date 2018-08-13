@@ -8,7 +8,7 @@ SuricataはUNIXソケットを聞いて、ユーザーからのコマンドを�
 
 suricatascと呼ばれるサンプルスクリプトがソースに提供され、Suricataのインストール/更新時に自動的にインストールされます。
 
-The unix socket is enabled by default if libjansson is available.
+libjanssonが利用可能であれば、unixソケットはデフォルトで有効になっています。
 
 You need to have libjansson installed:
 
