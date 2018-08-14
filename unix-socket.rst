@@ -20,11 +20,9 @@ Debian/Ubuntu::
 
    apt-get install libjansson4 libjansson-dev python-simplejson
 
-If libjansson is present on the system , unix socket will be compiled
-in automatically.
+libjanssonがシステムに存在する場合、unixソケットは自動的にコンパイルされます。
 
-The creation of the socket is managed by setting enabled to 'yes' or 'auto'
-under unix-command in Suricata YAML configuration file:
+ソケットの作成は、Suricata YAML設定ファイルのunix-commandで 'yes'または 'auto'を有効に設定することによって管理されます:
 
 ::
 
