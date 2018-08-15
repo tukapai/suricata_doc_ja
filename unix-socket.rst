@@ -12,9 +12,9 @@ libjanssonが利用可能であれば、unixソケットはデフォルトで有
 
 You need to have libjansson installed:
 
-* libjansson4 - C library for encoding, decoding and manipulating JSON data
-* libjansson-dev - C library for encoding, decoding and manipulating JSON data (dev)
-* python-simplejson - simple, fast, extensible JSON encoder/decoder for Python
+* libjansson4 - JSONデータをエンコード、デコード、操作するためのCライブラリ
+* libjansson-dev - JSONデータをエンコード、デコード、操作するためのライブラリ(開発版)
+* python-simplejson - Pyhon用のシンプルで高速で拡張可能なJSONエンコーダ/デコーダ
 
 Debian/Ubuntu::
 
@@ -30,12 +30,9 @@ libjanssonがシステムに存在する場合、unixソケットは自動的に
     enabled: yes
     #filename: custom.socket # use this to specify an alternate file
 
-The ``filename`` variable can be used to set an alternate socket
-filename. The filename is always relative to the local state base
-directory.
+`` filename``変数は、別のソケットファイル名を設定するために使用できます。 ファイル名は、常にローカル状態のベースディレクトリからの相対パスです。
 
-Clients are implemented for some language and can be used as code
-example to write custom scripts:
+クライアントはいくつかの言語用に実装されており、カスタムスクリプトを書くためのコード例として使用できます:
 
 * Python: https://github.com/inliniac/suricata/blob/master/scripts/suricatasc/suricatasc.in (provided with suricata and used in this document)
 * Perl: https://github.com/aflab/suricatac (a simple Perl client with interactive mode)
@@ -45,13 +42,13 @@ example to write custom scripts:
 
 Commands in standard running mode
 ---------------------------------
-You may need to install suricatasc if you have not done so, running the following command from scripts/suricatasc
+suricatascをインストールしていない場合は、scripts / suricatascから次のコマンドを実行する必要があります。
 
 ::
 
   sudo python setup.py install
 
-The set of existing commands is the following:
+既存のコマンドのセットは次のとおりです:
 
 * command-list: list available commands
 * shutdown: this shutdown Suricata
