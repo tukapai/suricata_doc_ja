@@ -103,7 +103,7 @@ You can use suricatasc directly on the command prompt:
 
 
 **NOTE:**
-You need to quote commands involving more than one argument:
+あなたは複数の引数を含むコマンドを引用する必要があります:
 
 ::
 
