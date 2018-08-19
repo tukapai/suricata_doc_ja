@@ -116,11 +116,7 @@ You can use suricatasc directly on the command prompt:
 Pcap processing mode
 --------------------
 
-This mode is one of main motivation behind this code. The idea is to
-be able to ask to Suricata to treat different pcap files without
-having to restart Suricata between the files. This provides you a huge
-gain in time as you don’t need to wait for the signature engine to
-initialize.
+このモードは、このコードの主な動機の1つです。この考えは、ファイル間でSuricataを再起動しなくても、異なるpcapファイルを扱うようにSuricataに依頼することができるようにすることです。シグネチャエンジンが初期化されるのを待つ必要がないため、時間が大幅に増えます。
 
 To use this mode, start suricata with your preferred YAML file and
 provide the option ``--unix-socket`` as argument:
