@@ -124,23 +124,19 @@ Pcap processing mode
 
   suricata -c /etc/suricata-full-sigs.yaml --unix-socket
 
-It is also possible to specify the socket filename as argument:
+引数としてソケットファイル名を指定することも可能です:
 
 ::
 
   suricata --unix-socket=custom.socket
 
-In this last case, you will need to provide the complete path to the
-socket to ``suricatasc``. To do so, you need to pass the filename as
-first argument of ``suricatasc``:
+この最後のケースでは、 `` suricatasc``へのソケットへの完全なパスを提供する必要があります。 そのためには、 `` suricatasc``の最初の引数としてファイル名を渡す必要があります:
 
 ::
 
   suricatasc custom.socket
 
-Once Suricata is started, you can use the provided script
-``suricatasc`` to connect to the command socket and ask for pcap
-treatment:
+Suricataが起動すると、提供されたスクリプト `` suricatasc``を使ってコマンドソケットに接続し、pcap処理を要求することができます:
 
 ::
 
@@ -152,15 +148,8 @@ treatment:
   >>> pcap-file-continuous /home/pcaps /tmp/dirout
   Success: Successfully added file to list
 
-You can add multiple files without waiting the result: they will be
-sequentially processed and the generated log/alert files will be put
-into the directory specified as second arguments of the pcap-file
-command. You need to provide absolute path to the files and directory
-as Suricata doesn’t know from where the script has been run. If you pass
-a directory instead of a file, all files in the directory will be processed. If
-using ``pcap-file-continuous`` and passing in a directory, the directory will
-be monitored for new files being added until you use ``pcap-interrupt`` or
-delete/move the directory.
+  結果を待たずに複数のファイルを追加することができます。
+  生成されたログ/アラートファイルは、pcap-fileコマンドの第2引数として指定されたディレクトリに格納されます。 Suricataがスクリプトが実行された場所からわからないので、ファイルとディレクトリの絶対パスを指定する必要があります。 ファイルの代わりにディレクトリを渡すと、ディレクトリ内のすべてのファイルが処理されます。 `` pcap-file-continuous``を使ってディレクトリを渡すと、 `` pcap-interrupt``を使うかディレクトリを削除/移動するまで、新しいファイルが追加されているかどうか監視されます。
 
 To know how many files are waiting to get processed, you can do:
 
