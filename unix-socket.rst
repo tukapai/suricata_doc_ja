@@ -118,8 +118,7 @@ Pcap processing mode
 
 このモードは、このコードの主な動機の1つです。この考えは、ファイル間でSuricataを再起動しなくても、異なるpcapファイルを扱うようにSuricataに依頼することができるようにすることです。シグネチャエンジンが初期化されるのを待つ必要がないため、時間が大幅に増えます。
 
-To use this mode, start suricata with your preferred YAML file and
-provide the option ``--unix-socket`` as argument:
+このモードを使用するには、好きなYAMLファイルでsuricataを起動し、 `` --unix-socket``オプションを引数として指定します:
 
 ::
 
