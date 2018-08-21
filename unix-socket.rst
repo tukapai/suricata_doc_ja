@@ -173,7 +173,7 @@ To get current processed file:
   Success:
   "/tmp/test.pcap"
 
-When passing in a directory, you can see last processed time (modified time of last file) in milliseconds since epoch:
+ディレクトリを渡すと、最終的に処理された時間（最後のファイルの変更時間）がエポックからミリ秒単位で表示されます。:
 
 ::
 
