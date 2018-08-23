@@ -181,7 +181,7 @@ To get current processed file:
   Success:
   1509138964000
 
-To interrupt directory processing which terminates the current state:
+現在の状態を終了するディレクトリ処理を中断する:
 
 ::
 
