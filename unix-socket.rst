@@ -192,7 +192,7 @@ To get current processed file:
 Build your own client
 ---------------------
 
-The protocol is documented in the following page
+プロトコルは次のページに記載されています
 https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Unix_Socket#Protocol
 
 The following session show what is send (SND) and received (RCV) by
