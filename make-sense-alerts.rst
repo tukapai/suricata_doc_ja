@@ -21,10 +21,7 @@ look at the actual rule.
 「SCAN」は、ルールの目的が一部のルールと一致することを示します。
 スキャンの形式。
 
-The "ET" indicates the rule came from the Emerging Threats
-project. "SCAN" indicates the purpose of the rule is to match on some
-form of scanning. Following that a more or less detailed description
-is given.
+「ET」は、ルールがEmerging Threatsプロジェクトから発生したことを示します。 「SCAN」は、ルールの目的が何らかのスキャン形式で一致することを示します。 それに続いて、多かれ少なかれ詳細な説明が与えられる
 
 Most rules contain some pointers to more information in the form of
 the "reference" keyword.
