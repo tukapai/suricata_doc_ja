@@ -237,11 +237,7 @@ In pcap-file mode, this gives:
   RCV: {"message": "Successfully added file to list", "return": "OK"}
   Success: Successfully added file to list
 
-There is one thing to be careful about: a Suricata message is sent in
-multiple send operations. This result in possible incomplete read on
-client side. The worse workaround is to sleep a bit before trying a
-recv call. An other solution is to use non blocking socket and retry a
-recv if the previous one has failed.
+注意すべき点が1つあります：Suricataメッセージは複数の送信操作で送信されます。 これにより、クライアント側で不完全な読み取りが行われる可能性があります。 回避策が悪いのは、recvコールを試す前に少し寝ることです。 もう1つの解決策は、非ブロッキングソケットを使用し、前のソケットが失敗した場合にrecvを再試行することです。
 
 Pcap-file json format is:
 
