@@ -254,11 +254,5 @@ Pcap-file json format is:
     }
   }
 
-`output-dir` and `filename` are required. `tenant` is optional and should be a
-number, indicating which tenant the file or directory should run under. `continuous`
-is optional and should be true/false, indicating that file or directory should be
-run until `pcap-interrupt` is sent or ctrl-c is invoked. `delete-when-done` is
-optional and should be true/false, indicating that the file or files under the
-directory specified by `filename` should be deleted when processing is complete.
-`delete-when-done` defaults to false, indicating files will be kept after
-processing.
+  `output-dir`と` filename`が必要です。 `tenant`はオプションで、ファイルまたはディレクトリがどのテナントで実行されるべきかを示す数字でなければなりません。 `continuous`はオプションであり、真または偽でなければならず、ファイルまたはディレクトリを指定する必要があります。
+  `pcap-interrupt`が送信されるか、ctrl-cが呼び出されるまで実行されます。 `delete-when-done`はオプションであり、処理が完了したときに` filename`で指定されたディレクトリの下のファイルを削除する必要があることを示すtrue / falseでなければなりません。 `delete-when-done`のデフォルトはfalseで、ファイルは処理後も保持されます。
