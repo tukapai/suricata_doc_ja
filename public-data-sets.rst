@@ -1,7 +1,7 @@
 Public Data Sets
 ================
 
-Collections of pcaps for testing, profiling.
+テスト、プロファイリング用のpcapのコレクション.
 
 DARPA sets: http://www.ll.mit.edu/mission/communications/cyber/CSTcorpora/ideval/data/
 
