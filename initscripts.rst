@@ -1,7 +1,7 @@
 Init Scripts
 ============
 
-For Ubuntu with Upstart, the following can be used in /etc/init/suricata.conf:
+Upstartを使ったUbuntuでは、/etc/init/suricata.conで以下を使用できます。f:
 
 
 ::
