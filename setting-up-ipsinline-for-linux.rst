@@ -1,7 +1,7 @@
 Setting up IPS/inline for Linux
 ================================
 
-In this guide will be explained how to work with Suricata in layer3 inline mode and how to set iptables for that purpose.
+このガイドでは、レイヤ3インラインモードでSuricataを使用する方法と、その目的のためにiptablesを設定する方法について説明します。
 
 First start with compiling Suricata with NFQ support. For instructions
 see `Ubuntu Installation
