@@ -16,12 +16,7 @@ look at the actual rule.
   msg:"ET SCAN sipscan probe";
 
 
-
-「ET」は、ルールがEmerging Threats から来たものであることを示します。
-「SCAN」は、ルールの目的が一部のルールと一致することを示します。
-スキャンの形式。
-
-「ET」は、ルールがEmerging Threatsプロジェクトから発生したことを示します。 「SCAN」は、ルールの目的が何らかのスキャン形式で一致することを示します。 それに続いて、多かれ少なかれ詳細な説明が与えられる
+「ET」は、ルールがEmerging Threatsプロジェクトから発生したことを示します。 「SCAN」は、ルールの目的が何らかのスキャン形式で一致することを示します。 それに続いて、多かれ少なかれ詳細な説明が与えられます。
 
 Most rules contain some pointers to more information in the form of
 the "reference" keyword.
