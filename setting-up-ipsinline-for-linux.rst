@@ -3,8 +3,8 @@ Setting up IPS/inline for Linux
 
 このガイドでは、レイヤ3インラインモードでSuricataを使用する方法と、その目的のためにiptablesを設定する方法について説明します。
 
-First start with compiling Suricata with NFQ support. For instructions
-see `Ubuntu Installation
+NFQをサポートしたSuricataのコンパイルから始めます。 指示
+`Ubuntuのインストール
 <https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Ubuntu_Installation>`_.
 For more information about NFQ and iptables, see
 :ref:`suricata-yaml-nfq`.
