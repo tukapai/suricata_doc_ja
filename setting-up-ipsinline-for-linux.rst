@@ -9,7 +9,7 @@ NFQをサポートしたSuricataのコンパイルから始めます。 指示
 For more information about NFQ and iptables, see
 :ref:`suricata-yaml-nfq`.
 
-To check if you have NFQ enabled in your Suricata, enter the following command:
+SuricataでNFQが有効になっているかどうかを確認するには、次のコマンドを入力します。
 
 
 ::
