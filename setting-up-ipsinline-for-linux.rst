@@ -17,9 +17,9 @@ SuricataでNFQが有効になっているかどうかを確認するには、次
 
   suricata --build-info
 
-and examine if you have NFQ between the features.
+  フィーチャ間にNFQがあるかどうかを調べます。
 
-To run suricata with the NFQ mode, you have to make use of the -q option. This option tells Suricata  which of the queue numbers it should use.
+  NFQモードでsuricataを実行するには、-qオプションを使用する必要があります。 このオプションは、Suricataにどのキュー番号を使用するかを指示します。
 
 
 ::
