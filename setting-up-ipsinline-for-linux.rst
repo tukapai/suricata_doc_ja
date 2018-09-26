@@ -42,7 +42,7 @@ If Suricata is running on a gateway and is meant to protect the computers behind
 If Suricata has to protect the computer it is running on, you are dealing with the second scenario: *host* (see drawing 2).
 These two ways of using Suricata can also be combined.
 
-The easiest rule in case of the gateway-scenario to send traffic to Suricata is:
+Suricataにトラフィックを送信するゲートウェイシナリオの場合の最も簡単なルールは次のとおりです。:
 
 
 ::
