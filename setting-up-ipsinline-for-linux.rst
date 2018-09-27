@@ -38,9 +38,9 @@ Iptables configuration
 
 .. image:: setting-up-ipsinline-for-linux/iptables1.png
 
-If Suricata is running on a gateway and is meant to protect the computers behind that gateway you are dealing with the first scenario: *forward_ing* .
-If Suricata has to protect the computer it is running on, you are dealing with the second scenario: *host* (see drawing 2).
-These two ways of using Suricata can also be combined.
+Suricataがゲートウェイ上で動作していて、そのゲートウェイの背後にあるコンピュータを保護するためのものであれば、最初のシナリオである* forward_ing *を処理しています。
+Suricataが実行中のコンピュータを保護しなければならない場合、2番目のシナリオ：*ホスト*（図2参照）を扱っています。
+Suricataを使用するこれら2つの方法を組み合わせることもできます。
 
 Suricataにトラフィックを送信するゲートウェイシナリオの場合の最も簡単なルールは次のとおりです。:
 
