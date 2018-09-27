@@ -50,7 +50,7 @@ Suricataにトラフィックを送信するゲートウェイシナリオの場
 
   sudo iptables -I FORWARD -j NFQUEUE
 
-In this case, all forwarded traffic goes to Suricata.
+この場合、転送されたすべてのトラフィックはSuricataに送られます。
 
 
 In case of the host situation, these are the two most simple iptable rules;
