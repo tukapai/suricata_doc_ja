@@ -52,8 +52,7 @@ Suricataにトラフィックを送信するゲートウェイシナリオの場
 
 この場合、転送されたすべてのトラフィックはSuricataに送られます。
 
-
-In case of the host situation, these are the two most simple iptable rules;
+このホスト状況の場合、これらは最も簡単な2つのiptableルールです。
 
 
 ::
