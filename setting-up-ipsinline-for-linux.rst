@@ -61,7 +61,7 @@ Suricataにトラフィックを送信するゲートウェイシナリオの場
   sudo iptables -I INPUT -j NFQUEUE
   sudo iptables -I OUTPUT -j NFQUEUE
 
-It is possible to set a queue number. If you do not, the queue number will be 0 by default.
+キュー番号を設定することができます。 そうしないと、キュー番号はデフォルトで0になります。
 
 Imagine you want Suricata to check for example just TCP-traffic, or all incoming traffic on port 80, or all traffic on destination-port 80, you can do so like this:
 
