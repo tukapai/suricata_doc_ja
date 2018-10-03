@@ -63,8 +63,7 @@ Suricataにトラフィックを送信するゲートウェイシナリオの場
 
 キュー番号を設定することができます。 そうしないと、キュー番号はデフォルトで0になります。
 
-Imagine you want Suricata to check for example just TCP-traffic, or all incoming traffic on port 80, or all traffic on destination-port 80, you can do so like this:
-
+たとえば、TCPトラフィックだけ、またはポート80のすべての着信トラフィック、または宛先ポート80のすべてのトラフィックをSuricataで確認する場合は、次のようにします。
 
 ::
 
