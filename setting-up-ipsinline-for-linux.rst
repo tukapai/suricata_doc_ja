@@ -71,7 +71,7 @@ Suricataにトラフィックを送信するゲートウェイシナリオの場
   sudo iptables -I INPUT -p tcp  -j NFQUEUE
   sudo iptables -I OUTPUT -p tcp -j NFQUEUE
 
-In this case, Suricata checks just TCP traffic.
+この場合、SuricataはTCPトラフィックだけをチェックします。
 
 
 ::
