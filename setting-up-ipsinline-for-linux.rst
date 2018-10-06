@@ -80,7 +80,7 @@ Suricataにトラフィックを送信するゲートウェイシナリオの場
   sudo iptables -I INPUT -p tcp --sport 80  -j NFQUEUE
   sudo iptables -I OUTPUT -p tcp --dport 80 -j NFQUEUE
 
-In this example, Suricata checks all input and output on port 80.
+この例では、Suricataはポート80のすべての入力と出力をチェックします。
 
 .. image:: setting-up-ipsinline-for-linux/iptables2.png
 
