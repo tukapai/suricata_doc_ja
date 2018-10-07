@@ -86,7 +86,7 @@ Suricataにトラフィックを送信するゲートウェイシナリオの場
 
 .. image:: setting-up-ipsinline-for-linux/IPtables3.png
 
-To see if you have set your iptables rules correct make sure Suricata is running and enter:
+iptablesのルールを正しく設定しているかどうかを確認するには、Suricataが実行されていることを確認してください:
 
 ::
 
