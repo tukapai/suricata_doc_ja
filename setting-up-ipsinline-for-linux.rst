@@ -93,7 +93,7 @@ iptablesのルールを正しく設定しているかどうかを確認するに
 
   sudo iptables -vnL
 
-In the example you can see if packets are being logged.
+この例では、パケットが記録されているかどうかを確認できます。
 
 .. image:: setting-up-ipsinline-for-linux/iptables_vnL.png
 
