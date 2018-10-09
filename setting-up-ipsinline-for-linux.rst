@@ -97,7 +97,7 @@ iptablesのルールを正しく設定しているかどうかを確認するに
 
 .. image:: setting-up-ipsinline-for-linux/iptables_vnL.png
 
-This description of the use of iptables is the way to use it with IPv4. To use it with IPv6 all previous mentioned commands have to start with 'ip6tables'. It is also possible to let Suricata check both kinds of traffic.
+iptablesのこの使用方法は、IPv4で使用する方法です。 IPv6でそれを使用するには、前述のコマンドはすべて 'ip6tables'で始める必要があります。 Suricataに両方の種類のトラフィックをチェックさせることも可能です。
 
 There is also a way to use iptables with multiple networks (and interface cards). Example:
 
