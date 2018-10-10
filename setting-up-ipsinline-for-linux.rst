@@ -99,7 +99,7 @@ iptablesのルールを正しく設定しているかどうかを確認するに
 
 iptablesのこの使用方法は、IPv4で使用する方法です。 IPv6でそれを使用するには、前述のコマンドはすべて 'ip6tables'で始める必要があります。 Suricataに両方の種類のトラフィックをチェックさせることも可能です。
 
-There is also a way to use iptables with multiple networks (and interface cards). Example:
+また、複数のネットワーク（およびインターフェイスカード）でiptablesを使用する方法もあります。例：
 
 
 .. image:: setting-up-ipsinline-for-linux/iptables4.png
@@ -111,11 +111,11 @@ There is also a way to use iptables with multiple networks (and interface cards)
   sudo iptables -I FORWARD -i eth0 -o eth1 -j NFQUEUE
   sudo iptables -I FORWARD -i eth1 -o eth0 -j NFQUEUE
 
-The options -i (input) -o (output) can be combined with all previous mentioned options
+オプション-i（入力）-o（出力）は、前述のすべてのオプションと組み合わせることができます
 
-If you would stop Suricata and use internet, the traffic will not come through. To make internet work correctly, you have to erase all iptable rules.
+Suricataを停止してインターネットを使用すると、トラフィックは流れません。インターネットを正しく動作させるには、すべてのiptableルールを消去する必要があります。
 
-To erase all iptable rules, enter:
+すべてのiptableルールを消去するには、次のように入力します。
 
 
 ::
