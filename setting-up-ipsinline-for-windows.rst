@@ -3,11 +3,11 @@ Setting up IPS/inline for Windows
 
 このガイドでは、WinDivert for Windowsを使用してSuricataをレイヤ4インラインモードで使用する方法について説明します
 
-最初にWinDivertのサポートでSuricataをコンパイルして起動します。, see
+最初にWinDivertのサポートでSuricataをコンパイルして起動します。, 
 `Windows Installation
 <https://redmine.openinfosecfoundation.org/attachments/download/1175/SuricataWinInstallationGuide_v1.4.3.pdf>`_.
-This documentation has not yet been updated with WinDivert information, so make
-sure to add the following flags to `configure`:
+このドキュメントはWinDivert情報で更新されていないため、make
+`configure`に以下のフラグを必ず付け加えてください。:
 
 ::
 
