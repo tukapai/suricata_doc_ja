@@ -3,7 +3,7 @@ Setting up IPS/inline for Windows
 
 このガイドでは、WinDivert for Windowsを使用してSuricataをレイヤ4インラインモードで使用する方法について説明します
 
-最初にWinDivertのサポートでSuricataをコンパイルして起動します。, 
+最初にWinDivertのサポートでSuricataをコンパイルして起動します。,
 `Windows Installation
 <https://redmine.openinfosecfoundation.org/attachments/download/1175/SuricataWinInstallationGuide_v1.4.3.pdf>`_.
 このドキュメントはWinDivert情報で更新されていないため、make
@@ -31,33 +31,47 @@ Suricataがゲートウェイ上で動作していて、ネットワークを保
 そのゲートウェイでは、NETWORK_FORWARDレイヤーでWinDivertを実行する必要があります。
 次のコマンドを使用して達成することができます:
 
-::
-
-  suricata -c suricata.yaml --windivert-forward [filter string]
-
-The filter is automatically stopped and normal traffic resumes when Suricata is
-stopped.
-
-A quick start is to examine all traffic, in which case you can use the following
-command:
+SuricataでWinDivertが有効になっているかどうかを確認するには、次のように入力します
+昇格したコマンドプロンプトまたは端末のコマンド：
 
 ::
 
-  suricata -c suricata.yaml --windivert[-forward] true
+  suricata -c suricata.yaml --windivert [フィルタ文字列]
 
-A few additional examples:
+WinDivertフィルタ言語の詳細については、次を参照してください。
+https://www.reqrypt.org/windivert-doc.html#filter_language
 
-Only TCP traffic:
+Suricataがゲットウェイ上で動作していて、ネットワークを保護するためのものである場合
+そのゲームでは、NETWORK_FORWARDレイヤーでWinDivertを実行する必要があります。
+次のコマンドを使用して達成することができます：
+
 ::
 
-  suricata -c suricata.yaml --windivert tcp
+  suricata -c suricata.yaml --windivert-forward [フィルタ文字列]
 
-Only TCP traffic on port 80:
+Suricataが自動的に停止すると、フィルタは自動的に停止し、通常のトラフィックが再開されます。
+停止。
+
+クイックスタートは、すべてのトラフィックを調べることです。その場合、次のものを使用できます
+コマンド：
+
 ::
 
-  suricata -c suricata.yaml --windivert "tcp.DstPort == 80"
+  suricata -c suricata.yaml --windivert [-forward] true
 
-TCP and ICMP traffic:
+いくつかの追加例：
+
+TCPトラフィックのみ：
 ::
 
-  suricata -c suricata.yaml --windivert "tcp or icmp"
+  suricata -c suricata.yaml --windivert tcp
+
+ポート80上のTCPトラフィックのみ：
+::
+
+  suricata -c suricata.yaml --windivert "tcp.DstPort == 80"
+
+TCPおよびICMPトラフィック：
+::
+
+  suricata -c suricata.yaml --windivert "tcp or icmp"
