@@ -5,8 +5,8 @@
 それは深刻なものですか？関連性はどうですか？偽陽性ですか？
 
 #TODO　あとでやる
-To find out more about the rule that fired, it's always a good idea to
-look at the actual rule.
+廃止されたルールの詳細については、
+実際のルールを確認してください。
 
 ルールで最初に調べるのは、msg"キーワードの後に続く説明です
 例を考えてみましょう：
