@@ -38,8 +38,7 @@ Consider the following example rule:
     reference:url,www.emergingthreats.net/cgi-bin/cvsweb.cgi/sigs/CURRENT_EVENTS/CURRENT_Adobe; \
     sid:2010496; rev:2;)
 
-In this rule the reference keyword indicates 3 url's to visit for more
-information:
+このルールでは、参照キーワードは、詳細については訪問する3つのURLを示します:
 
 ::
 
