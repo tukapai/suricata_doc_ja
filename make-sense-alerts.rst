@@ -39,7 +39,6 @@ Consider the following example rule:
     sid:2010496; rev:2;)
 
 このルールでは、参照キーワードは、詳細については訪問する3つのURLを示します:
-
 ::
 
   isc.sans.org/diary.html?storyid=7747

@@ -14,7 +14,8 @@ Setting up IPS/inline for Windows
   --enable-windivert=yes --with-windivert-include=<include-dir> --with-windivert-libraries=<libraries-dir>
 
 
-WinDivert.dllとWinDivert.sysは、Suricata実行可能ファイルと同じディレクトリになければなりません。 WinDivertは、実行時に自動的にドライバをインストールします。 WinDivertの詳細については以下をご確認ください。
+WinDivert.dllとWinDivert.sysは、Suricata実行可能ファイルと同じディレクトリになければなりません。
+WinDivertは、実行時に自動的にドライバをインストールします。 WinDivertの詳細については以下をご確認ください。
 https://www.reqrypt.org/windivert-doc.html.
 
 To check if you have WinDivert enabled in your Suricata, enter the following

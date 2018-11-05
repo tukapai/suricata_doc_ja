@@ -1,7 +1,7 @@
 Init Scripts
 ============
 
-Upstartを使ったUbuntuでは、/etc/init/suricata.conで以下を使用できます。f:
+Upstartを使ったUbuntuでは、/etc/init/suricata.conで以下を使用できます。:
 
 
 ::

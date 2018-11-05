@@ -76,11 +76,12 @@ Next to these tests, based on the type of code change further tests can be run m
 - ライブ・パフォーマンステスト
 - various other manual tests based on evaluation of the proposed changes
 
-上記のテストのほとんどが受け入れテストとして使われていることを理解することは非常に重要です。もし何か間違いがあったとときのために、あなたのコードの中にアドレスを入れるかどうかはあなた次第ですが。
+上記のテストのほとんどが受け入れテストとして使われていることを理解することは非常に重要です。  
+もし何か間違いがあったとときのために、あなたのコードの中にアドレスを入れるかどうかはあなた次第です。
 
-One step of the QA is currently run post-merge. We submit builds to the Coverity Scan program. Due to limitations of this (free) service, we can submit once a day max.
-Of course it can happen that after the merge the community will find issues. For both cases we request you to help address the issues as they may come up.
-
+QAの1つのステップは、現在、マージ後に実行されます。  
+Coverity Scanプログラムにビルドを提出場合は（無料）サービスの制限により、1日1回最大提出できます。  
+マージ後にコミュニティが問題を見つけることがあります。 どちらの場合も、問題が発生した場合、対処してください。  
 
 
 
@@ -93,7 +94,7 @@ A：それはコードの品質を含む多くのことに依存します。新�
 
 __Q：PRはいつマージされますか？__
 
-A：それは、それが主要な特徴であるか、または高いリスクの変化と見なされる場合、おそらく次のメジャーバージョンに入るでしょう。
+A：それは、それが主要なfeatureであるか、または高いリスクの変化と見なされる場合、おそらく次のメジャーバージョンに入るでしょう。
 
 
 __Q：私のPRはなぜクローズされたのですか？__
@@ -112,7 +113,8 @@ A：QAの自動化を支援するために、私たちは滞在するための�
 
 __Q：あなたのQAテストは間違っていると思う__
 
-A：本当にそうだと思うなら、それを改善する方法について話し合うことができます。しかし、すぐにこの結論に至らないようにしてください。それは間違っていることが明らかになります。
+A：本当にそうだと思うなら、それを改善する方法について話し合うことができます。  
+しかし、すぐにこの結論に至らないようにしてください。それは間違っていることが明らかになります。
 
 
 __Q：コントリビュータライセンス契約に署名する必要がありますか？__

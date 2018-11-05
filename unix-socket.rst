@@ -71,8 +71,8 @@ suricatascをインストールしていない場合は、scripts / suricatasc�
 * memcap-show: show memcap value of an item specified
 * memcap-list: list all memcap values available
 
-You can access to these commands with the provided example script which
-is named ``suricatasc``. A typical session with ``suricatasc`` will looks like:
+これらのコマンドには、「suricatasc」という名前のサンプルスクリプトを使用してアクセスできます。
+ `` suricatasc``との典型的なセッションは以下のようになります:
 
 ::
 
@@ -89,7 +89,7 @@ is named ``suricatasc``. A typical session with ``suricatasc`` will looks like:
 Commands on the cmd prompt
 --------------------------
 
-You can use suricatasc directly on the command prompt:
+コマンドプロンプトで直接suricatascを使用することができます:
 
 ::
 
@@ -130,7 +130,8 @@ Pcap processing mode
 
   suricata --unix-socket=custom.socket
 
-この最後のケースでは、 `` suricatasc``へのソケットへの完全なパスを提供する必要があります。 そのためには、 `` suricatasc``の最初の引数としてファイル名を渡す必要があります:
+この最後のケースでは、 `` suricatasc``へのソケットへの完全なパスを提供する必要があります。
+ そのためには、 `` suricatasc``の最初の引数としてファイル名を渡す必要があります:
 
 ::
 
@@ -151,21 +152,21 @@ Suricataが起動すると、提供されたスクリプト `` suricatasc``を�
   結果を待たずに複数のファイルを追加することができます。
   生成されたログ/アラートファイルは、pcap-fileコマンドの第2引数として指定されたディレクトリに格納されます。 Suricataがスクリプトが実行された場所からわからないので、ファイルとディレクトリの絶対パスを指定する必要があります。 ファイルの代わりにディレクトリを渡すと、ディレクトリ内のすべてのファイルが処理されます。 `` pcap-file-continuous``を使ってディレクトリを渡すと、 `` pcap-interrupt``を使うかディレクトリを削除/移動するまで、新しいファイルが追加されているかどうか監視されます。
 
-To know how many files are waiting to get processed, you can do:
+どのファイルが処理待ちになっているかを知るには:
 
 ::
 
   >>> pcap-file-number
   Success: 3
 
-To get the list of queued files, do:
+キューに入れられたファイルのリストを取得するには:
 
 ::
 
   >>> pcap-file-list
   Success: {'count': 2, 'files': ['/home/benches/file1.pcap', '/home/benches/file2.pcap']}
 
-To get current processed file:
+処理中のファイルを確認するには:
 
 ::
 
@@ -204,7 +205,7 @@ the server. Initial negotiation is the following:
   SND: {"version": "0.1"}
   RCV: {"return": "OK"}
 
-Once this is done, command can be issued:
+これが完了すると、コマンドを発行することができます:
 
 ::
 
@@ -217,7 +218,7 @@ Once this is done, command can be issued:
   RCV: {"message": {"pkts": 41508, "drop": 0, "invalid-checksums": 0}, "return": "OK"}
   Success: {'pkts': 41508, 'drop': 0, 'invalid-checksums': 0}
 
-In pcap-file mode, this gives:
+pcap-fileモードでは、以下のようになります。:
 
 ::
 
