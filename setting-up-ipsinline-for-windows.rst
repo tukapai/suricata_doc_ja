@@ -18,14 +18,13 @@ WinDivert.dllとWinDivert.sysは、Suricata実行可能ファイルと同じデ�
 WinDivertは、実行時に自動的にドライバをインストールします。 WinDivertの詳細については以下をご確認ください。
 https://www.reqrypt.org/windivert-doc.html.
 
-To check if you have WinDivert enabled in your Suricata, enter the following
-command in an elevated command prompt or terminal:
+SuricataでWinDivertが有効になっているかどうかを確認するには、昇格したコマンドプロンプトまたはターミナルで次のコマンドを入力します:
 
 ::
 
   suricata -c suricata.yaml --windivert [filter string]
 
-For information on the WinDivert filter language, see
+WinDivertフィルタ言語の詳細については、以下を参照してください
 https://www.reqrypt.org/windivert-doc.html#filter_language
 
 Suricataがゲートウェイ上で動作していて、ネットワークを保護するためのものである場合
