@@ -37,8 +37,7 @@ Suricataは、ほとんどが信頼できない入力を扱う複雑なソフト
 * 誤検知によるネットワーク障害を引き起こす可能性があります。
 
 
-#TODO ここは後で考える  
-In other words, we think the stakes are pretty high, especially since in many common cases the IDS/IPS will be directly reachable by an attacker.
+言い換えれば、多くの一般的なケースではIDS / IPSへ攻撃者が直接到達可能になる、危険性はかなり高いと考えられます。
 
 この理由のために、我々は、非常に広範囲のQAプロセスを開発しました。Suricataへの貢献の結果が反映されるまでにはいくつかの長いステップを経る必要があります。
 
@@ -55,8 +54,6 @@ In other words, we think the stakes are pretty high, especially since in many co
 
 信頼できる開発者とコアチームのメンバーは、（半）公開のBuildbotインスタンスにビルドをサブミットできます。 既存の機能が壊れていないことを確認するために、一連のビルドテストとリグレッションスイートを実行されます。
 
-The final QA run takes a few hours minimally, and is started by Victor. It currently runs:
-
 最終的なQAはVictorによって実行され最低でも2.3時間ほど実行されます。
 
 - 異なるOSのもの、コンパイラ、最適化レベル、機能設定を行うextensive build tests
@@ -67,7 +64,7 @@ The final QA run takes a few hours minimally, and is started by Victor. It curre
 - UNIXソケット・テスト
 - pcapをベースとしたASANとLSANを用いるfuzzテスト。
 
-Next to these tests, based on the type of code change further tests can be run manually:
+これらのテストに続いて、コード変更のタイプに基づいて、さらにテストを手動で実行できます:
 
 - トラフィックリプレイ・テスト（マルチ・ギガビット）
 - 大規模なpcap収集処理（マルチ・テラバイト）
